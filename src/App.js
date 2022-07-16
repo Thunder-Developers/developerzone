@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import Navbar from './components/Navbar'
+import Banner from './components/Banner'
+import OilSection from './components/OilSection'
+import JuiceSection from './components/JuiceSection'
+import GrainsSection from './components/GrainsSection'
+import HerbsSection from './components/HerbsSection'
+import PulsesSection from './components/PulsesSection'
+import Categories from './components/Categories'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navbar brandName="CompanyName3"/>
+      <Categories/>
+      <Banner/>
+      <OilSection product="Oil" />
+      <JuiceSection product="Juice"/>
+      <GrainsSection product="Grains"/>
+      <HerbsSection product="Herbs"/>
+      <PulsesSection product="Pulses"/>
+
+    </>
+  )
 }
 
-export default App;
+export default App

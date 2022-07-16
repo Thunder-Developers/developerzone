@@ -6,7 +6,7 @@ import JuiceSection from './components/JuiceSection'
 import GrainsSection from './components/GrainsSection'
 import HerbsSection from './components/HerbsSection'
 import PulsesSection from './components/PulsesSection'
-import Categories from './components/Categories'
+import Categories from './components/Categories' 
 const App = () => {
   return (
     <>

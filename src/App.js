@@ -7,10 +7,14 @@ import GrainsSection from './components/GrainsSection'
 import HerbsSection from './components/HerbsSection'
 import PulsesSection from './components/PulsesSection'
 import Categories from './components/Categories'
+import Review from './components/Review'
+import Footer from './components/Footer'
+import SocialMedia from './components/SocialMedia'
+
 const App = () => {
   return (
     <>
-      <Navbar brandName="CompanyName3"/>
+      <Navbar brandName="2Pahadi"/>
       <Categories/>
       <Banner/>
       <OilSection product="Oil" />
@@ -18,6 +22,9 @@ const App = () => {
       <GrainsSection product="Grains"/>
       <HerbsSection product="Herbs"/>
       <PulsesSection product="Pulses"/>
+      <Review/>
+      <SocialMedia/>
+      <Footer/>
 
     </>
   )

@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import Img from "../Assest/oil-img.jpg";
 import Container from "@mui/material/Container";
 import { Button, CardActionArea, CardActions } from "@mui/material";
-
+import Avatar from '@mui/material/Avatar';
 
 const OilSection = (props) => {
   return (

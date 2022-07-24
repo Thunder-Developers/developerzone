@@ -17,9 +17,9 @@ const App = () => {
       <Navbar brandName="2Pahadi"/>
       <Categories/>
       <Banner/>
+      <GrainsSection product="Grains"/>
       <OilSection product="Oil" />
       <JuiceSection product="Juice"/>
-      <GrainsSection product="Grains"/>
       <HerbsSection product="Herbs"/>
       <PulsesSection product="Pulses"/>
       <Review/>

@@ -30,7 +30,7 @@ const Review = () => {
                     <Typography sx={{backgroundColor:"#34B3F1",color:"white",borderRadius:"3px",fontSize:"1.4rem"}}>5.0</Typography>
                     <Typography sx={{color:"gold",fontSize:"1.4rem"}}>&#9733;</Typography>
                 </Box>
-            <Typography variant="subtitle1">I wanted to use natural products And I am loving it. I just love all of them. The website works perfectly. I would suggest you make an app also. Payment is secure and delivery was on time. This is the best brand in this category.</Typography>
+            <Typography variant="subtitle1">I wanted to use natural products And I am loving it. I just love all of them. The website works perfectly. Payment is secure and delivery was on time. This is the best brand in this category.</Typography>
           </CardContent>
         </Card>
       </Box>

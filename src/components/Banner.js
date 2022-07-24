@@ -57,13 +57,13 @@ const Banner = () => {
   // </div>
   return (
     <>
-      <Box mb={1} sx={{height:"350px",border:"2px solid black"}}>
+      <Box mb={1} sx={{border:"2px solid black",height:"330px"}}>
         <Carousel responsive={responsive}>
-          <div style={{border:"1px solid red",height:"200px"}}>10</div>
-          <div style={{border:"1px solid red",height:"200px"}}>1</div>
-          <div style={{border:"1px solid red",height:"200px"}}>2</div>
-          <div style={{border:"1px solid red",height:"200px"}}>3</div>
-          <div style={{border:"1px solid red",height:"200px"}}>4</div>
+          <div> <img style={{height:"285px",objectFit: "cover"}} src="https://images.unsplash.com/photo-1543304216-b46be324b571?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1881&q=80" alt="" /> </div>
+          <div> <img style={{height:"285px",objectFit: "cover"}} src="https://images.unsplash.com/photo-1514733670139-4d87a1941d55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80" alt="" /> </div>
+          <div> <img style={{height:"285px",objectFit: "cover"}} src="https://images.unsplash.com/photo-1514733670139-4d87a1941d55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80" alt="" /> </div>
+          <div> <img style={{height:"285px",objectFit: "cover"}} src="https://images.unsplash.com/photo-1514733670139-4d87a1941d55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80" alt="" /> </div>
+          <div> <img style={{height:"285px",objectFit: "cover"}} src="https://images.unsplash.com/photo-1514733670139-4d87a1941d55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80" alt="" /> </div>
         </Carousel>
       </Box>
     </>

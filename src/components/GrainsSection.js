@@ -47,7 +47,7 @@ const GrainsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Grain
+                    Red Rice
                   </Typography>
                   <Typography
                     gutterBottom
@@ -92,7 +92,7 @@ const GrainsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Grain
+                    Sharbati Rice
                   </Typography>
                   <Typography
                     gutterBottom
@@ -137,7 +137,7 @@ const GrainsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Grain
+                    Pahadi Thick Rice
                   </Typography>
                   <Typography
                     gutterBottom
@@ -182,7 +182,7 @@ const GrainsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Grain
+                    Sp. Basmati Rice
                   </Typography>
                   <Typography
                     gutterBottom
@@ -227,7 +227,7 @@ const GrainsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Grain
+                    Jhangora Rice
                   </Typography>
                   <Typography
                     gutterBottom
@@ -272,7 +272,7 @@ const GrainsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Grain
+                    Madwa
                   </Typography>
                   <Typography
                     gutterBottom

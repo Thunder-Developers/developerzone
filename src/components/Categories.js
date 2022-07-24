@@ -2,7 +2,6 @@ import React from "react";
 import { Box } from "@mui/system";
 import Typography from "@mui/material/Typography";
 import Img from "../Assest/Herb.jpg";
-import Container from "@mui/material/Container";
 
 const Categories = () => {
   return (
@@ -11,7 +10,6 @@ const Categories = () => {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          border: "1px solid red",
           alignItems: "center",
           padding: "20px 10px",
         }}

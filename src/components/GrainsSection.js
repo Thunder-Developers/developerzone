@@ -5,11 +5,18 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Img from "../Assest/Grains-img.jpeg";
+// import { useHistory } from "react-router-dom";
 import Container from "@mui/material/Container";
+import "./comp.css"
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
 
 const GrainsSection = (props) => {
+  // const history = useHistory();
+  const handlroute = () => {
+    // let path = `/viewALL`;
+    // history.push(path);
+  }
   return (
     <>
       <Container maxWidth={false} sx={{ marginBottom: "20px" }}>
@@ -20,16 +27,16 @@ const GrainsSection = (props) => {
           alignItems="center"
         >
           <Grid item>
-            <Typography variant="h4">{props.product } Range</Typography>
+            <Typography variant="h4">{props.product} Range</Typography>
           </Grid>
-          <Grid item>
-            <Button variant="outlined">View All</Button>
+          <Grid item className="buttontransition">
+            <Button variant="outlined" onClick={handlroute}>View All</Button>
           </Grid>
         </Grid>
       </Container>
       <Container maxWidth={false}>
         <Grid container spacing={2} sx={{ marginBottom: "20px" }}>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
@@ -62,19 +69,20 @@ const GrainsSection = (props) => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"
                   variant="outlined"
                   sx={{ width: "100%" }}
+
                 >
                   Add To Card
                 </Button>
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
@@ -107,7 +115,7 @@ const GrainsSection = (props) => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"
@@ -119,7 +127,7 @@ const GrainsSection = (props) => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
@@ -152,7 +160,7 @@ const GrainsSection = (props) => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"
@@ -164,7 +172,7 @@ const GrainsSection = (props) => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
@@ -197,7 +205,7 @@ const GrainsSection = (props) => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"
@@ -209,7 +217,7 @@ const GrainsSection = (props) => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
@@ -242,7 +250,7 @@ const GrainsSection = (props) => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"
@@ -254,7 +262,7 @@ const GrainsSection = (props) => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
@@ -287,7 +295,7 @@ const GrainsSection = (props) => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"

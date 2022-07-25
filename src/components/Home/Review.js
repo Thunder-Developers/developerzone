@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Img from "../Assest/oil-img.jpg";
+import Img from "../../Assest/oil-img.jpg";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import CardHeader from "@mui/material/CardHeader";

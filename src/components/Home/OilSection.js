@@ -4,12 +4,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Img from "../Assest/Herb.jpg";
+import Img from "../../Assest/oil-img.jpg";
 import Container from "@mui/material/Container";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
-
-const HerbsSection = (props) => {
+const OilSection = (props) => {
   return (
     <>
       <Container maxWidth={false} sx={{ marginBottom: "20px" }}>
@@ -47,7 +46,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Coco Oil
                   </Typography>
                   <Typography
                     gutterBottom
@@ -92,7 +91,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Coco Oil
                   </Typography>
                   <Typography
                     gutterBottom
@@ -137,7 +136,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Coco Oil
                   </Typography>
                   <Typography
                     gutterBottom
@@ -182,7 +181,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Coco Oil
                   </Typography>
                   <Typography
                     gutterBottom
@@ -227,7 +226,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Coco Oil
                   </Typography>
                   <Typography
                     gutterBottom
@@ -272,7 +271,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Coco Oil
                   </Typography>
                   <Typography
                     gutterBottom
@@ -305,4 +304,4 @@ const HerbsSection = (props) => {
   );
 };
 
-export default HerbsSection;
+export default OilSection;

@@ -2,9 +2,9 @@ import { Box } from "@mui/system";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Banner1 from "../Assest/Banner-1.jpg"
-import Banner2 from "../Assest/Banner-2.jpg"
-import Banner3 from "../Assest/Banner-3.jpg"
+import Banner1 from "../../Assest/Banner-1.jpg"
+import Banner2 from "../../Assest/Banner-2.jpg"
+import Banner3 from "../../Assest/Banner-3.jpg"
 
 const responsive = {
   superLargeDesktop: {

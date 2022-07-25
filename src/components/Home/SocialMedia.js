@@ -5,18 +5,17 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
 import { Icon, Typography } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
-import DeleteIcon from "@mui/icons-material/Delete";
 const SocialMedia = () => {
   return (
     <>
       <Box sx={{
-            border: "1px solid black",
-            display:"flex",
-            flexDirection:"column",
-            justifyContent:"center",
-            alignItems:"center",
-            padding:"30px"
-          }}>
+        border: "1px solid black",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "30px"
+      }}>
         <Typography variant="h4" sx={{}}>
           Follow Us For Early Updates
         </Typography>

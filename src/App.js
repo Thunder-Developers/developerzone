@@ -1,32 +1,25 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Banner from './components/Banner'
-import OilSection from './components/OilSection'
-import JuiceSection from './components/JuiceSection'
-import GrainsSection from './components/GrainsSection'
-import HerbsSection from './components/HerbsSection'
-import PulsesSection from './components/PulsesSection'
-import Categories from './components/Categories'
-import Review from './components/Review'
-import Footer from './components/Footer'
-import SocialMedia from './components/SocialMedia'
+import React from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from "./components/Home/index"
+import ViewALL from "./components/ViewALL/index"
+import NotFound from "./components/404NotFound/index"
+
+import "./App.css";
 
 const App = () => {
   return (
-    <>
-      <Navbar brandName="2Pahadi"/>
-      <Categories/>
-      <Banner/>
-      <GrainsSection product="Grains"/>
-      <OilSection product="Oil" />
-      <JuiceSection product="Juice"/>
-      <HerbsSection product="Herbs"/>
-      <PulsesSection product="Pulses"/>
-      <Review/>
-      <SocialMedia/>
-      <Footer/>
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/viewall" element={<ViewALL />} />
+        <Route path="/NotFound" element={<NotFound />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

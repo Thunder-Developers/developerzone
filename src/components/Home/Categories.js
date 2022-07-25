@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/system";
 import Typography from "@mui/material/Typography";
-import Img from "../Assest/Herb.jpg";
+import Img from "../../Assest/Herb.jpg";
 
 const Categories = () => {
   return (

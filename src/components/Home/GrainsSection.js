@@ -4,12 +4,19 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Img from "../Assest/oil-img.jpg";
+import Img from "../../Assest/Grains-img.jpeg";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Container from "@mui/material/Container";
+import "./comp.css"
 import { Button, CardActionArea, CardActions } from "@mui/material";
-import Avatar from '@mui/material/Avatar';
 
-const OilSection = (props) => {
+
+const GrainsSection = (props) => {
+  const navigate = useNavigate()
+  const handlroute = () => {
+    console.log("anish");
+    navigate("/viewAll")
+  }
   return (
     <>
       <Container maxWidth={false} sx={{ marginBottom: "20px" }}>
@@ -20,23 +27,23 @@ const OilSection = (props) => {
           alignItems="center"
         >
           <Grid item>
-            <Typography variant="h4">{props.product } Range</Typography>
+            <Typography variant="h4">{props.product} Range</Typography>
           </Grid>
-          <Grid item>
-            <Button variant="outlined">View All</Button>
+          <Grid item className="buttontransition">
+            <Button variant="outlined" onClick={handlroute}>View All</Button>
           </Grid>
         </Grid>
       </Container>
       <Container maxWidth={false}>
         <Grid container spacing={2} sx={{ marginBottom: "20px" }}>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="230"
                   image={Img}
-                  alt="oil-img"
+                  alt="Grain-img"
                 />
                 <CardContent
                   sx={{ alignItems: "center", justifyContent: "center" }}
@@ -47,7 +54,7 @@ const OilSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Coco Oil
+                    Red Rice
                   </Typography>
                   <Typography
                     gutterBottom
@@ -55,14 +62,60 @@ const OilSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Reduces Hair Fall | Strengthens Hair | Softens Hair
+                    Boost Immunity | Helps Digestion | Remove Toxins
                   </Typography>
                   <Typography variant="h6" color="#231955" align="center">
-                    &#8377;999
+                    &#8377;299/Kg
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
+                <Button
+                  size="small"
+                  color="primary"
+                  variant="outlined"
+                  sx={{ width: "100%" }}
+
+                >
+                  Add To Card
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
+            <Card sx={{ maxWidth: 345 }} variant="outlined">
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="230"
+                  image={Img}
+                  alt="Grain-img"
+                />
+                <CardContent
+                  sx={{ alignItems: "center", justifyContent: "center" }}
+                >
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    align="center"
+                  >
+                    Sharbati Rice
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant="subtitle2"
+                    component="div"
+                    align="center"
+                  >
+                    Boost Immunity | Helps Digestion | Remove Toxins
+                  </Typography>
+                  <Typography variant="h6" color="#231955" align="center">
+                    &#8377;299/Kg
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"
@@ -74,14 +127,14 @@ const OilSection = (props) => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="230"
                   image={Img}
-                  alt="oil-img"
+                  alt="Grain-img"
                 />
                 <CardContent
                   sx={{ alignItems: "center", justifyContent: "center" }}
@@ -92,7 +145,7 @@ const OilSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Coco Oil
+                    Pahadi Thick Rice
                   </Typography>
                   <Typography
                     gutterBottom
@@ -100,14 +153,14 @@ const OilSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Reduces Hair Fall | Strengthens Hair | Softens Hair
+                    Boost Immunity | Helps Digestion | Remove Toxins
                   </Typography>
                   <Typography variant="h6" color="#231955" align="center">
-                    &#8377;999
+                    &#8377;299/Kg
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"
@@ -119,14 +172,14 @@ const OilSection = (props) => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="230"
                   image={Img}
-                  alt="oil-img"
+                  alt="Grain-img"
                 />
                 <CardContent
                   sx={{ alignItems: "center", justifyContent: "center" }}
@@ -137,7 +190,7 @@ const OilSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Coco Oil
+                    Sp. Basmati Rice
                   </Typography>
                   <Typography
                     gutterBottom
@@ -145,14 +198,14 @@ const OilSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Reduces Hair Fall | Strengthens Hair | Softens Hair
+                    Boost Immunity | Helps Digestion | Remove Toxins
                   </Typography>
                   <Typography variant="h6" color="#231955" align="center">
-                    &#8377;999
+                    &#8377;299/Kg
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"
@@ -164,14 +217,14 @@ const OilSection = (props) => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="230"
                   image={Img}
-                  alt="oil-img"
+                  alt="Grain-img"
                 />
                 <CardContent
                   sx={{ alignItems: "center", justifyContent: "center" }}
@@ -182,7 +235,7 @@ const OilSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Coco Oil
+                    Jhangora Rice
                   </Typography>
                   <Typography
                     gutterBottom
@@ -190,14 +243,14 @@ const OilSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Reduces Hair Fall | Strengthens Hair | Softens Hair
+                    Boost Immunity | Helps Digestion | Remove Toxins
                   </Typography>
                   <Typography variant="h6" color="#231955" align="center">
-                    &#8377;999
+                    &#8377;299/Kg
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"
@@ -209,14 +262,14 @@ const OilSection = (props) => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
+          <Grid item xs={6} sm={4} md={3} lg={2} xl={2} className="changetransition">
             <Card sx={{ maxWidth: 345 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="230"
                   image={Img}
-                  alt="oil-img"
+                  alt="Grain-img"
                 />
                 <CardContent
                   sx={{ alignItems: "center", justifyContent: "center" }}
@@ -227,7 +280,7 @@ const OilSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Coco Oil
+                    Madwa
                   </Typography>
                   <Typography
                     gutterBottom
@@ -235,59 +288,14 @@ const OilSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Reduces Hair Fall | Strengthens Hair | Softens Hair
+                    Boost Immunity | Helps Digestion | Remove Toxins
                   </Typography>
                   <Typography variant="h6" color="#231955" align="center">
-                    &#8377;999
+                    &#8377;299/Kg
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
-                <Button
-                  size="small"
-                  color="primary"
-                  variant="outlined"
-                  sx={{ width: "100%" }}
-                >
-                  Add To Card
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
-            <Card sx={{ maxWidth: 345 }} variant="outlined">
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="230"
-                  image={Img}
-                  alt="oil-img"
-                />
-                <CardContent
-                  sx={{ alignItems: "center", justifyContent: "center" }}
-                >
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    align="center"
-                  >
-                    Coco Oil
-                  </Typography>
-                  <Typography
-                    gutterBottom
-                    variant="subtitle2"
-                    component="div"
-                    align="center"
-                  >
-                    Reduces Hair Fall | Strengthens Hair | Softens Hair
-                  </Typography>
-                  <Typography variant="h6" color="#231955" align="center">
-                    &#8377;999
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions sx={{ justifyContent: "center" }}>
+              <CardActions sx={{ justifyContent: "center" }} className="buttontransition">
                 <Button
                   size="small"
                   color="primary"
@@ -305,4 +313,4 @@ const OilSection = (props) => {
   );
 };
 
-export default OilSection;
+export default GrainsSection;

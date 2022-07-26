@@ -7,8 +7,15 @@ import Typography from "@mui/material/Typography";
 import Img from "../../Assest/Squash.jpg";
 import Container from "@mui/material/Container";
 import { Button, CardActionArea, CardActions } from "@mui/material";
+import {useNavigate } from "react-router-dom";
 
 const SquashsSection = (props) => {
+
+  const navigate = useNavigate()
+  const handlroute = () => {
+    navigate("/AllSquash")
+  }
+
   return (
     <>
       <Container maxWidth={false} sx={{ marginBottom: "20px" }}>
@@ -22,7 +29,7 @@ const SquashsSection = (props) => {
             <Typography variant="h4">{props.product} Range</Typography>
           </Grid>
           <Grid item>
-            <Button variant="outlined">View All</Button>
+            <Button variant="outlined" onClick={handlroute}>View All</Button>
           </Grid>
         </Grid>
       </Container>

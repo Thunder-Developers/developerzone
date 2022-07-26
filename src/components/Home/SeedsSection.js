@@ -7,8 +7,15 @@ import Typography from "@mui/material/Typography";
 import Img from "../../Assest/Seeds.jpg";
 import Container from "@mui/material/Container";
 import { Button, CardActionArea, CardActions } from "@mui/material";
+import {useNavigate } from "react-router-dom";
 
 const AllSeeds = () => {
+
+  const navigate = useNavigate()
+  const handlroute = () => {
+    navigate("/AllSeeds")
+  }
+
   return (
     <>
     <Container maxWidth={false} sx={{ marginBottom: "20px" }}>
@@ -22,7 +29,7 @@ const AllSeeds = () => {
           <Typography variant="h4">Seeds</Typography>
         </Grid>
         <Grid item className="buttontransition">
-          <Button variant="outlined" >View All</Button>
+          <Button variant="outlined" onClick={handlroute}>View All</Button>
         </Grid>
       </Grid>
     </Container>

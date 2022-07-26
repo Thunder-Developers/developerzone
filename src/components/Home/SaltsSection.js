@@ -7,8 +7,13 @@ import Typography from "@mui/material/Typography";
 import Img from "../../Assest/Salts.jpg";
 import Container from "@mui/material/Container";
 import { Button, CardActionArea, CardActions } from "@mui/material";
+import {useNavigate } from "react-router-dom";
 
 const SaltsSection = (props) => {
+  const navigate = useNavigate()
+  const handlroute = () => {
+    navigate("/AllSalts")
+  }
   return (
     <>
       <Container maxWidth={false} sx={{ marginBottom: "20px" }}>
@@ -22,7 +27,7 @@ const SaltsSection = (props) => {
             <Typography variant="h4">{props.product} Range</Typography>
           </Grid>
           <Grid item>
-            <Button variant="outlined">View All</Button>
+            <Button variant="outlined" onClick={handlroute}>View All</Button>
           </Grid>
         </Grid>
       </Container>

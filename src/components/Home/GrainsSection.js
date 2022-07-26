@@ -14,7 +14,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 const GrainsSection = (props) => {
   const navigate = useNavigate()
   const handlroute = () => {
-    navigate("/viewAll")
+    navigate("/AllGrains")
   }
   return (
     <>

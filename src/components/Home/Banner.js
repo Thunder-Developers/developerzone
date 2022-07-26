@@ -5,6 +5,8 @@ import "react-multi-carousel/lib/styles.css";
 import Banner1 from "../../Assest/Banner-1.jpg"
 import Banner2 from "../../Assest/Banner-2.jpg"
 import Banner3 from "../../Assest/Banner-3.jpg"
+import Banner4 from "../../Assest/Banner-4.jpg"
+import Banner5 from "../../Assest/Banner-5.jpg"
 
 const responsive = {
   superLargeDesktop: {
@@ -31,9 +33,11 @@ const Banner = () => {
     <>
       <Box mb={1} sx={{ height: "330px" }}>
         <Carousel responsive={responsive} infinite={true}>
+          <div> <img style={{ height: "285px", objectFit: "cover", width: "1500px" }} src={Banner5} alt="" /> </div>
+          <div> <img style={{ height: "285px", objectFit: "cover", width: "1500px" }} src={Banner4} alt="" /> </div>
           <div> <img style={{ height: "285px", objectFit: "cover", width: "1500px" }} src={Banner3} alt="" /> </div>
           <div> <img style={{ height: "285px", objectFit: "cover", width: "1500px" }} src={Banner1} alt="" /> </div>
-          <div> <img style={{ height: "285px", objectFit: "cover", }} src={Banner2} alt="" /> </div>
+          <div> <img style={{ height: "285px", objectFit: "cover", width: "1500px"  }} src={Banner2} alt="" /> </div>
         </Carousel>
       </Box>
     </>

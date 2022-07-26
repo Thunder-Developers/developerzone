@@ -1,7 +1,14 @@
 import React from "react";
 import { Box } from "@mui/system";
 import Typography from "@mui/material/Typography";
-import Img from "../../Assest/Herb.jpg";
+import Img1 from "../../Assest/Grains-img.jpeg";
+import Img2 from "../../Assest/Pulses.jpg";
+import Img3 from "../../Assest/Spices.jpg";
+import Img4 from "../../Assest/Seeds.jpg";
+import Img5 from "../../Assest/Salts.jpg";
+import Img6 from "../../Assest/Flour.jpg";
+import Img7 from "../../Assest/Herb.jpg";
+import Img8 from "../../Assest/Herb.jpg";
 
 const Categories = () => {
   return (
@@ -32,7 +39,7 @@ const Categories = () => {
               borderRadius: "50%",
               cursor:"pointer"
             }}
-            src={Img}
+            src={Img1}
           />{" "}
           <Typography fontWeight="bold" variant="subtitle2">Grains</Typography>
         </Box>
@@ -54,7 +61,7 @@ const Categories = () => {
               borderRadius: "50%",
               cursor:"pointer"
             }}
-            src="https://via.placeholder.com/220/00ff00?text=2"
+            src={Img2}
           />{" "}
           <Typography fontWeight="bold" variant="subtitle2">Pulses</Typography>
         </Box>
@@ -76,7 +83,7 @@ const Categories = () => {
               borderRadius: "50%",
               cursor:"pointer"
             }}
-            src="https://via.placeholder.com/230/00ff00?text=3"
+            src={Img3}
           />{" "}
           <Typography fontWeight="bold" variant="subtitle2">Spices</Typography>
         </Box>
@@ -98,7 +105,7 @@ const Categories = () => {
               borderRadius: "50%",
               cursor:"pointer"
             }}
-            src="https://via.placeholder.com/240/00ff00?text=4"
+            src={Img4}
           />{" "}
           <Typography fontWeight="bold" variant="subtitle2">Seeds</Typography>
         </Box>
@@ -120,7 +127,7 @@ const Categories = () => {
               borderRadius: "50%",
               cursor:"pointer"
             }}
-            src="https://via.placeholder.com/250/00ff00?text=5"
+            src={Img5}
           />{" "}
           <Typography fontWeight="bold" variant="subtitle2">Salts</Typography>
         </Box>
@@ -142,7 +149,7 @@ const Categories = () => {
               borderRadius: "50%",
               cursor:"pointer"
             }}
-            src="https://via.placeholder.com/260/00ff00?text=6"
+            src={Img6}
           />{" "}
           <Typography fontWeight="bold" variant="subtitle2">Flour</Typography>
         </Box>
@@ -164,7 +171,7 @@ const Categories = () => {
               borderRadius: "50%",
               cursor:"pointer"
             }}
-            src="https://via.placeholder.com/270/00ff00?text=7"
+            src={Img7}
           />{" "}
           <Typography fontWeight="bold" variant="subtitle2">Herbs</Typography>
         </Box>
@@ -186,7 +193,7 @@ const Categories = () => {
               borderRadius: "50%",
               cursor:"pointer"
             }}
-            src="https://via.placeholder.com/280/35BDD0?text=8"
+            src={Img8}
           />{" "}
           <Typography fontWeight="bold" variant="subtitle2">Pickel</Typography>
         </Box>

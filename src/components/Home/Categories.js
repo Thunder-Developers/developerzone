@@ -1,14 +1,14 @@
 import React from "react";
 import { Box } from "@mui/system";
 import Typography from "@mui/material/Typography";
-import Img1 from "../../Assest/Grains-img.jpeg";
-import Img2 from "../../Assest/Pulses.jpg";
-import Img3 from "../../Assest/Spices.jpg";
-import Img4 from "../../Assest/Seeds.jpg";
-import Img5 from "../../Assest/Salts.jpg";
-import Img6 from "../../Assest/Flour.jpg";
-import Img7 from "../../Assest/Herb.jpg";
-import Img8 from "../../Assest/Herb.jpg";
+import Img1 from "../../Assest/riceicon.jpg";
+import Img2 from "../../Assest/pulsesicon.jpg";
+import Img3 from "../../Assest/speciesicon.jpg";
+import Img4 from "../../Assest/seedsicon.jpg";
+import Img5 from "../../Assest/saltsicon.jpg";
+import Img6 from "../../Assest/Flouricon.jpg";
+import Img7 from "../../Assest/Herbicon.jpg";
+import Img8 from "../../Assest/pickelsicon.jpg";
 
 const Categories = () => {
   return (

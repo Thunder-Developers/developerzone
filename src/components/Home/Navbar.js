@@ -160,7 +160,7 @@ const Navbar = (props) => {
           >
             {props.brandName}
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" },flexDirection: "row-reverse" }}>
             {pages.map((page) => (
               <Button
                 key={page}

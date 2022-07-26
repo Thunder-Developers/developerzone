@@ -12,7 +12,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 const HerbsSection = (props) => {
   return (
     <>
-      <Container maxWidth={false} sx={{ marginBottom: "20px" }}>
+        <Container maxWidth={false} sx={{ marginBottom: "20px" }}>
         <Grid
           container
           direction="row"
@@ -47,7 +47,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Tulsi
                   </Typography>
                   <Typography
                     gutterBottom
@@ -92,7 +92,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Giloy
                   </Typography>
                   <Typography
                     gutterBottom
@@ -137,7 +137,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Kutki
                   </Typography>
                   <Typography
                     gutterBottom
@@ -182,7 +182,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Pahadi Gandrain (Smooth Angelica)
                   </Typography>
                   <Typography
                     gutterBottom
@@ -227,7 +227,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Baalchar (Nardus Root)
                   </Typography>
                   <Typography
                     gutterBottom
@@ -272,7 +272,7 @@ const HerbsSection = (props) => {
                     component="div"
                     align="center"
                   >
-                    Herbs
+                    Flower Herbal Tea 
                   </Typography>
                   <Typography
                     gutterBottom

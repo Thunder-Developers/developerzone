@@ -7,13 +7,13 @@ import Typography from "@mui/material/Typography";
 import Img from "../../Assest/Spices.jpg";
 import Container from "@mui/material/Container";
 import { Button, CardActionArea, CardActions } from "@mui/material";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 const SpicesSection = (props) => {
 
   const navigate = useNavigate()
   const handlroute = () => {
-    navigate("/viewAll/AllSpices")
+    navigate("/AllSpices")
   }
 
   return (

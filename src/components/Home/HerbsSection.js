@@ -7,10 +7,17 @@ import Typography from "@mui/material/Typography";
 import Img from "../../Assest/Herb.jpg";
 import Container from "@mui/material/Container";
 import { Button, CardActionArea, CardActions } from "@mui/material";
-
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const HerbsSection = (props) => {
+  
+  const navigate = useNavigate()
+  const handlroute = () => {
+    navigate("/AllHerbs")
+  }
+
   return (
+    
     <>
         <Container maxWidth={false} sx={{ marginBottom: "20px" }}>
         <Grid
@@ -23,7 +30,7 @@ const HerbsSection = (props) => {
             <Typography variant="h4">{props.product } Range</Typography>
           </Grid>
           <Grid item>
-            <Button variant="outlined">View All</Button>
+            <Button variant="outlined" onClick={handlroute}>View All</Button>
           </Grid>
         </Grid>
       </Container>

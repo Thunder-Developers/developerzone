@@ -81,7 +81,7 @@ const Navbar = (props) => {
 
   return (
     <div>
-      <AppBar sx={{ backgroundColor: "#19D843", position: "sticky" }}>
+      <AppBar sx={{ backgroundColor: "#00D7FF", position: "sticky" }}>
         <Toolbar>
           <ShoppingBagIcon
             sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}

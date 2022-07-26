@@ -7,8 +7,17 @@ import Typography from "@mui/material/Typography";
 import Img from "../../Assest/Flour.jpg";
 import Container from "@mui/material/Container";
 import { Button, CardActionArea, CardActions } from "@mui/material";
+  
+import {useNavigate } from "react-router-dom";
 
 const FlourSection = (props) => {
+
+  const navigate = useNavigate()
+  const handlroute = () => {
+  navigate("/AllFlour")
+  }
+
+
   return (
         <>
         <Container maxWidth={false} sx={{ marginBottom: "20px" }}>
@@ -22,7 +31,7 @@ const FlourSection = (props) => {
               <Typography variant="h4">{props.product} Range</Typography>
             </Grid>
             <Grid item>
-              <Button variant="outlined">View All</Button>
+              <Button variant="outlined" onClick={handlroute}>View All</Button>
             </Grid>
           </Grid>
         </Container>
